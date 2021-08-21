@@ -1,1 +1,64 @@
 {{!-- Main Handlebar Template --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Tech Blog</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo">
+        <h1>
+            <a href="/">Tech Blog</a> 
+        </h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                
+                {{#if loggedIn}}
+
+                    <li>
+                        <a href="/dashboard">Dashboard</a>
+                    </li>
+                    <li>
+                        <button id="logout" class="btn-no-style">logout</button>
+                    </li>
+
+                {{else}}
+
+                    <li>
+                        <a href="/login">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/login">login</a>
+                    </li>
+
+                {{/if}}
+            </ul>
+        </nav>      
+    </header>
+
+    <main>
+      {{{ body }}}
+    </main>
+
+    <footer>
+        <div class="content has-text-centered is-small">
+            <strong>Thanks for visiting!</strong>
+        </div>
+    </footer>
+    
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>
