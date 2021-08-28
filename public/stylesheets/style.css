@@ -101,7 +101,7 @@ header nav ul li button:hover{
 .post {
     background-color: var(--tertiary-color);
     padding-top: 10px;
-    margin-top: 10px;
+    margin: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px gray;
 }
@@ -119,6 +119,7 @@ header nav ul li button:hover{
 .post .post_text {
     display: flex;
     justify-content: center;
+    font-size: 25px;
 }
 
 .post .date {
@@ -186,4 +187,48 @@ header nav ul li button:hover{
     margin-left: 15px;
     padding: 3px;
     cursor: pointer;
+}
+
+/* Dashboard Styling */
+.dashboard h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+.new-post-form {
+    background-color: var(--tertiary-color);
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px gray;
+}
+
+.new-post-form label {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.new-post-form input {
+    width: 40%;
+}
+
+.new-post-form textarea {
+    width: 98%;
+    margin-left: 10px;
+}
+
+.new-post-form .post_desc {
+    display: flex;
+    justify-content: center;
+}
+
+.your-posts h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+.edit a {
+    margin-left: 10px;
 }
