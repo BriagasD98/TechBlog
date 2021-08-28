@@ -13,7 +13,7 @@
   ## Installation
   1) clone the repository by entering the following command in the command line: <br/> 
   ```
-  git clone git@github.com:
+  git clone git@github.com:BriagasD98/TechBlog.git
   ```
   2) Install the necessary dependencies by entering the following commands into the command line: <br/>
   ```
