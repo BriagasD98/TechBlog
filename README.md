@@ -1,5 +1,7 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) <br/>
+
 # TechBlog
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+My challenge this week was to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. **Tech Blog** is an application built using Handlebars.js, MySQL, Node.js, CSS, Bulma and more. With **Tech Blog**, Users can **sign up and sign-in** to their profiles where they can **create, edit and delete** posts. There are three navigation links in **Tech Blog** such as **Home, Dashboard, and Login/Logout**. In the **Home** page, users can view posts created by others as well as their own. In the **Dashboard**, Users can **create, edit and delete posts**. While users are logged in, they may also **comment** on posts they're interested in. On every **Post** and **Comment** is a **Timestamp** of when it was created and the **name of the user who posted it**.<br/>
 
 ## Table of Contents
   * [Installation](#Installation)
