@@ -184,7 +184,7 @@ header nav ul li button:hover{
 }
 
 .submit-button {
-    margin-left: 15px;
+    margin: 0 0 10px 10px;
     padding: 3px;
     cursor: pointer;
 }
@@ -231,4 +231,57 @@ header nav ul li button:hover{
 
 .edit a {
     margin-left: 10px;
+}
+
+/* Edit-Post Styling */
+.edit-post-header {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#edit-post a {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.edit-post-form {
+    background-color: var(--tertiary-color);
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px gray;
+}
+
+.edit-post-form textarea {
+    width: 98%;
+    margin-left: 10px;
+}
+
+.edit-post-form input {
+    width: 40%;
+    margin: 10px;
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-buttons button {
+    padding: 5px;
+    margin: 0 10px 10px 10px;
+    cursor: pointer;
+}
+
+.edit-post-text .post_desc {
+    margin-left: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-post-title .post_title {
+    margin-left: 10px;
+    font-size: 20px;
 }

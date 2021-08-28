@@ -1,36 +1,24 @@
 {{!-- Edit-Post Page --}}
-<article>
+<article id="edit-post">
   <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
+  <h2 class="edit-post-header">
     Edit Post
   </h2>
   <form class="edit-post-form">
-    <div>
+    <div class="edit-post-title">
+      <label class="post_title" for="post-title">Title</label>
       <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.post_url}})</span>
     </div>
-    <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+    <div class="edit-post-text">
+      <label class="post_desc" for="post-text">Description</label>
+      <textarea name="post-text">{{post.post_text}}</textarea>
     </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+    <div class="edit-buttons">
+      <button type="submit">Save post</button>
+      <button type="button" class="delete-post-btn">Delete post</button>
+    </div>
   </form>
 </article>
 
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
-  </div>
-</form>
-
-{{> comments post.comments}}
-
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script>
