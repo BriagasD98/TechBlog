@@ -1,1 +1,89 @@
 /* Check Back soon for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root {
+    --primary-color: White;
+    --secondary-color: rgb(43,171,255);
+    /* --tertiary-color: ; */
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: var(--secondary-color);
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: rgb(1, 30, 75);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(1, 30, 75);
+}
+
+header nav {
+    margin: 7px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+header nav ul li a:hover{
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+
+header nav ul li button{
+    padding: 10px 15px;
+    color: rgb(1, 30, 75);
+    font-weight: 600;
+    font-size: 1.5vw;
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+header nav ul li button:hover{
+    background: white;
+    color: black;
+    border-radius: 15px;
+}

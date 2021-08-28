@@ -1,5 +1,19 @@
 {{!-- Single Post Page --}}
-{{> post-info post }}
+<div class="single-post">
+      <article class="post">
+          <div class="title">
+            <h2>{{post.title}}<h2></h2>
+          </div>
+          <div class="text">
+            <p>{{post.post_text}}</p>
+          </div>
+          <div class="date">
+              by {{post.user.username}} on {{format_date post.created_at}}
+          </div>
+      </article>
+</div>
+
+<h2>Comments</h2>
 
 {{#if loggedIn}}
 <form class="comment-form">
@@ -13,7 +27,18 @@
 </form>
 {{/if}}
 
-{{> comments post.comments}}
+<div class="comments">
+  {{#each post.comments}}
+  <section class="comment">
+    <div class="meta">
+      {{user.username}} on {{created_at}}
+    </div>
+    <div class="text">
+      {{comment_text}}
+    </div>
+  </section>
+  {{/each}}
+</div>
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
