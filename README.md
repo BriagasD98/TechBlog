@@ -1,4 +1,5 @@
 # TechBlog
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Table of Contents
   * [Installation](#Installation)
@@ -43,6 +44,7 @@
   ## Usage
   
   <br/>
+  
   In your **MySQL command line**, enter the following commands to setup the database:
   
   ```
@@ -65,23 +67,23 @@
   
   <br/>
   
+  ![Screenshot (66)](https://user-images.githubusercontent.com/83102464/131232849-12bc9d5e-0315-402b-849a-825f41abf356.png)
   
   <br/>
   
+  ![Screenshot (67)](https://user-images.githubusercontent.com/83102464/131232854-fff01e43-1ca5-43bd-9417-30822b0b410f.png)
   
   <br/>
   
+  ![Screenshot (68)](https://user-images.githubusercontent.com/83102464/131232857-e284f936-b3f0-42bc-8f09-3dc7429cd4cb.png)
 
   <br/>
   
-
+  ![Screenshot (69)](https://user-images.githubusercontent.com/83102464/131232858-4dee5f49-099b-4afd-b042-3ff893e0e7a1.png)
 
   <br/>
   
-  
-  <br/>
-  
-
+  ![Screenshot (70)](https://user-images.githubusercontent.com/83102464/131232859-d16ccace-ca5c-4f4b-a87f-8001ff331466.png)
   
   <br/>
 
