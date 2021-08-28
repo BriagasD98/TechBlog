@@ -1,6 +1,6 @@
 {{!-- Home Page --}}
 {{#unless loggedIn}}
-  <ul class="post-list">
+  <ul id="post-list">
     {{#each posts}}
     <li>
       <article class="post">
@@ -20,7 +20,7 @@
 {{/unless}}
 
 {{#if loggedIn}}
-  <ul class="post-list">
+  <ul id="post-list">
     {{#each posts}}
     <li>
       <article class="post">

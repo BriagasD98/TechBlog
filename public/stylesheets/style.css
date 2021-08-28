@@ -8,7 +8,7 @@
 :root {
     --primary-color: White;
     --secondary-color: rgb(43,171,255);
-    /* --tertiary-color: ; */
+    --tertiary-color: rgba(43,171,255,0.4);
 }
 
 body {
@@ -86,4 +86,50 @@ header nav ul li button:hover{
     background: white;
     color: black;
     border-radius: 15px;
+}
+
+/* Post Card Styling */
+#post-list {
+    background-color: white;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    background-color: var(--tertiary-color);
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px gray;
+}
+
+.post a {
+    color: black;
+}
+
+.post .title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.post .post_text {
+    display: flex;
+    justify-content: center;
+}
+
+.post .date {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.single-post {
+    margin: 10px;
+}
+
+.single-post .post_text {
+    font-size: 22px;
 }
